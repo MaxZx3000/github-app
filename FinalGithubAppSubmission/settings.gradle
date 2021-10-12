@@ -1,0 +1,4 @@
+include ':consumerapp'
+include ':consumerapp'
+include ':app'
+rootProject.name='GithubAppSubmission2'

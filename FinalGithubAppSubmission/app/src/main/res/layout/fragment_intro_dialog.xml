@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/root_view"
+    tools:context=".fragments.IntroDialogFragment">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container_description"
+        style="@style/FullWidthContainerConstraintLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:id="@+id/textView6"
+            style="@style/WhiteText.LargeText.Default.Center"
+            android:padding="8dp"
+            android:background="@android:color/white"
+            tools:backgroundTint="@color/colorPrimaryDark"
+            android:text="@string/welcome_title"
+            android:tag="@string/color_primary_dark_tag"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/textView5"
+            style="@style/WhiteText.BasicText.Default.Center"
+            android:layout_marginTop="8dp"
+            android:text="@string/greeting"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+        <EditText
+            android:id="@+id/edt_username"
+            style="@style/FullWidthContainerConstraintLayout"
+            android:layout_marginTop="24dp"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:id="@+id/img_octocat"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/container_description"
+        tools:src="@drawable/octocat" />
+    <Button
+        android:id="@+id/btn_ok"
+        style="@style/FullWidthContainerConstraintLayout"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:tag="@string/color_accent_tag"
+        android:text="@string/apply"
+        app:layout_constraintBottom_toTopOf="@+id/btn_abort"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/img_octocat"
+        app:layout_constraintTop_toTopOf="@+id/img_octocat"
+        tools:backgroundTint="@color/colorAccent" />
+    <Button
+        android:id="@+id/btn_abort"
+        android:text="@string/abort"
+        style="@style/FullWidthContainerConstraintLayout"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/img_octocat"
+        app:layout_constraintTop_toBottomOf="@+id/btn_ok" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/FullWidthContainer"
+    android:id="@+id/root_view">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:id="@+id/frame_container_people_info"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@color/colorPrimary"
+            android:tag="@string/color_primary_tag"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <ImageView style="@style/CircleIcon"
+                android:tag="@string/color_primary_dark_tag"/>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:layout_gravity="center">
+                <ImageView
+                    android:id="@+id/img_logo"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="12dp"
+                    android:src="@drawable/ic_people_outline"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <TextView
+                    android:id="@+id/tv_total_people"
+                    style="@style/WhiteText.LargeText.Default.Followers"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/img_logo"
+                    tools:text="0" />
+                <TextView
+                    style="@style/WhiteText.BasicText.Followers"
+                    android:id="@+id/tv_people_type"
+                    android:text="@string/followings"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_total_people" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </FrameLayout>
+        <include
+            android:id="@+id/layout_fragment_user"
+            layout="@layout/people_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/frame_container_people_info" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+ </androidx.core.widget.NestedScrollView>

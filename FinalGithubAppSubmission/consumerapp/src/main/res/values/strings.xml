@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">ConsumerApp</string>
+    <string name="color_primary_tag" translatable="false">COLOR_PRIMARY_TAG</string>
+    <string name="color_primary_dark_tag" translatable="false">COLOR_PRIMARY_DARK_TAG</string>
+    <string name="color_accent_tag" translatable="false">COLOR_ACCENT_TAG</string>
+    <string-array name="sort_type">
+        <item>@string/ascending</item>
+        <item>@string/descending</item>
+        <item>@string/latest</item>
+    </string-array>
+    <string name="ascending" translatable="false">A-Z</string>
+    <string name="descending" translatable="false">Z-A</string>
+    <string name="latest">Latest Added</string>
+    <string name="your_stats">Your stats</string>
+    <string name="favorites">Favorites</string>
+    <string name="favorite_detail">Keep adding users to your favorite lists for more fun!</string>
+    <string name="your_favorites">Your favorites</string>
+    <string name="favorite_no_data">Hmmmm… It looks like it\'s lonely here. Don\'t be too shy to give them a like!</string>
+    <string name="sort">Sort</string>
+    <string name="favorite">Consumer App Favorite Users</string>
+    <string name="favorite_seen_times">You have seen %s profile %d times since added to favorite</string>
+</resources>

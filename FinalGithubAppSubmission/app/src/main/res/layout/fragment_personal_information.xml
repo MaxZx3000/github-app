@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:id="@+id/root_view">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        style="@style/FullWidthContainer">
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TableRow style="@style/TableContainer">
+                <LinearLayout style="@style/TableHeading.DarkThemeColor">
+                    <ImageView
+                        style="@style/TableIcon"
+                        android:src="@drawable/ic_user_white" />
+                    <TextView
+                        style="@style/WhiteText.BasicText.TableHeading"
+                        android:text="@string/owner_username" />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tv_username"
+                    style="@style/WhiteText.TableContent.ThemeColor"
+                    tools:text="Sample Username" />
+            </TableRow>
+
+            <TableRow style="@style/TableContainer">
+
+                <LinearLayout style="@style/TableHeading.DarkThemeColor">
+                    <ImageView
+                        style="@style/TableIcon"
+                        android:src="@drawable/ic_business" />
+                    <TextView
+                        style="@style/WhiteText.BasicText.TableHeading"
+                        android:text="@string/company" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_company"
+                    style="@style/WhiteText.TableContent.ThemeColor"
+                    tools:text="Sample Company Name" />
+            </TableRow>
+
+            <TableRow style="@style/TableContainer">
+
+                <LinearLayout style="@style/TableHeading.DarkThemeColor">
+                    <ImageView
+                        style="@style/TableIcon"
+                        android:src="@drawable/ic_location" />
+                    <TextView
+                        style="@style/WhiteText.BasicText.TableHeading"
+                        android:text="@string/location" />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tv_location"
+                    style="@style/WhiteText.TableContent.ThemeColor"
+                    tools:text="Sample Location Text" />
+            </TableRow>
+
+            <TableRow style="@style/TableContainer">
+                <LinearLayout style="@style/TableHeading.DarkThemeColor">
+                    <ImageView
+                        style="@style/TableIcon"
+                        android:src="@drawable/ic_web" />
+                    <TextView
+                        style="@style/WhiteText.BasicText.TableHeading"
+                        android:text="@string/blog" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_blog"
+                    style="@style/WhiteText.TableContent.ThemeColor"
+                    tools:text="Sample Blog" />
+            </TableRow>
+        </TableLayout>
+        <Button
+            android:id="@+id/btn_show_blog"
+            android:tag="@string/color_accent_tag"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:text="@string/view_person_blog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

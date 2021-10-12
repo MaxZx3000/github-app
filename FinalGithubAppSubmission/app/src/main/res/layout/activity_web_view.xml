@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/FullWidthContainer"
+    tools:context=".activity.WebViewActivity"
+    android:id="@+id/root_view">
+    <TextView
+        android:id="@+id/tv_progress"
+        style="@style/WhiteText.BasicText.Default.Center"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toStartOf="@+id/btn_refresh"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn_refresh"
+        tools:text="Status" />
+    <TextView
+        android:id="@+id/tv_error"
+        style="@style/FullWidthContainerConstraintLayout"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_refresh"
+        app:layout_constraintEnd_toStartOf="@+id/btn_refresh"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_progress"
+        android:text="@string/no_errors" />
+    <Button
+        android:id="@+id/btn_refresh"
+        style="@style/FullWidthContainerConstraintLayout"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:tag="@string/color_accent_tag"
+        android:backgroundTint="@color/colorAccent"
+        android:textColor="@android:color/white"
+        android:text="@string/refresh"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ScrollView
+        style="@style/FullWidthContainerConstraintLayout"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_refresh"
+        app:layout_constraintVertical_bias="0.0">
+        <WebView
+            android:id="@+id/web_view"
+            style="@style/FullWidthContainer"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

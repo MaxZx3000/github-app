@@ -1,0 +1,64 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="190dp"
+    android:background="@drawable/rectangle_corners"
+    android:padding="@dimen/widget_margin">
+    <ImageView
+        android:id="@+id/img_favorite_user"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/green_background"/>
+    <Button
+        android:id="@+id/btn_details"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:tag="@string/color_primary_dark_tag"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|start"
+        android:text="@string/details"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/colorPrimaryDark"/>
+
+    <LinearLayout
+        android:id="@+id/container_watermark"
+        style="@style/FullWidthContainer"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_favorite" />
+        <TextView
+            android:id="@+id/tv_message"
+            style="@style/WhiteText.BasicText.Default.Center"
+            android:text="@string/empty_image_data" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_random"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/random"
+        android:tag="@string/color_primary_dark_tag"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:textColor="@android:color/white"
+        android:layout_gravity="end|bottom"/>
+    <TextView
+        android:id="@+id/tv_username"
+        android:visibility="gone"
+        style="@style/WhiteText.BasicText.Default.Center"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:background="@color/colorBlackTranslucent"
+        android:padding="5dp"
+        tools:text="Sample Text"/>
+</FrameLayout>

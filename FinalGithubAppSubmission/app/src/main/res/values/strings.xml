@@ -1,0 +1,127 @@
+<resources>
+    <string name="app_name">Final Github App Submission</string>
+    <string name="waiting_data">Please wait… We are currently retrieving the data from the internet…</string>
+    <string name="location">Location</string>
+    <string name="fullname">Fullname</string>
+    <string name="company">Company</string>
+    <string name="repositories">Repositories</string>
+    <string name="followings">Following</string>
+    <string name="followers">followers</string>
+    <string name="blog">Blog</string>
+    <string name="parse_data">Parsing data…</string>
+    <string name="data_retrieve_success">Successfully retrieve data!</string>
+    <string name="invalid_space">Your username cannot contains any space!</string>
+    <string name="invalid_empty">Your field cannot be empty!</string>
+    <string name="no_user_data">Search finished! However, we couldn\'t find any users with your inputted name!</string>
+    <string name="search_bar_hint">Enter username here…</string>
+    <string name="welcome_message">Hello! You can start searching github users by clicking the search bar icon!</string>
+    <string name="share_user_information">Share User Information</string>
+    <string name="please_wait">Please wait…</string>
+    <string name="retrieve_user_detail">Retrieving user detail from the internet…</string>
+    <string name="abort">Abort</string>
+    <string name="waiting">Waiting…</string>
+    <string name="almost_there">Almost There…</string>
+    <string name="parse_user_detail">Parsing user detail data…</string>
+    <string name="data_load_success">Data loaded successfully!</string>
+    <string name="error_title">Error!</string>
+    <string name="retry">Retry</string>
+    <string name="personal">Personal</string>
+    <string name="repository">Repository</string>
+    <string name="type">Type</string>
+    <string name="gist">Gists</string>
+    <string name="no_information">No information</string>
+    <string name="share_user_detail">Share user detail</string>
+    <string name="copied_to_clipboard">Username (%s) has been copied to clipboard!</string>
+    <string name="user_information">User Information</string>
+    <string name="retrieving_user_data">Retrieving %s data…</string>
+    <string name="users_found">Hooray! We have found %d users!</string>
+    <string name="notification_success_title">Success!</string>
+    <string name="notification_success_description">Successfully retrieve data! Click here to see your results!</string>
+    <string name="notification_error">Error! Retrying…</string>
+    <string name="notification_wait_title">Please wait…</string>
+    <string name="notification_retrieving_data">Retrieving your request…</string>
+    <string name="repeat_5_seconds">We will repeat the task after 5 seconds</string>
+    <string name="view_person_blog">View person\'s blog</string>
+    <string name="key_daily_reminder_time" translatable="false">daily_reminder_time</string>
+    <string name="key_username" translatable="false">KEY_USERNAME</string>
+    <string name="key_daily_reminder_tone" translatable="false">daily_reminder_tone</string>
+    <string name="key_color_app_theme" translatable="false">color_app_theme</string>
+    <string name="key_enable_daily_alert" translatable="false">daily_alert</string>
+    <string name="key_factory_reset" translatable="false">factory_reset</string>
+    <string name="select_ringtone">Select your ringtone</string>
+    <string name="color_primary_tag" translatable="false">COLOR_PRIMARY_TAG</string>
+    <string name="color_primary_dark_tag" translatable="false">COLOR_PRIMARY_DARK_TAG</string>
+    <string name="color_accent_tag" translatable="false">COLOR_ACCENT_TAG</string>
+    <string name="key_language" translatable="false">key_language</string>
+    <string-array name="sort_type">
+        <item>@string/ascending</item>
+        <item>@string/descending</item>
+        <item>@string/latest</item>
+    </string-array>
+    <string name="ascending" translatable="false">A-Z</string>
+    <string name="descending" translatable="false">Z-A</string>
+    <string name="latest">Latest Added</string>
+    <string name="red">Red</string>
+    <string name="green">Green</string>
+    <string name="blue">Blue</string>
+    <string name="cannot_process_image">Unable to load image</string>
+    <string name="empty_image_data">Add all your awesomeness here!</string>
+    <string name="your_stats">Your stats</string>
+    <string name="favorites">Favorites</string>
+    <string name="favorite_detail">Keep adding users to your favorite lists for more fun!</string>
+    <string name="keywords">Keywords</string>
+    <string name="keywords_detail">Don\'t be shy to meet up with new friends in github!</string>
+    <string name="your_favorites">Your favorites</string>
+    <string name="favorite_no_data">Hmmmm… It looks like it\'s lonely here. Don\'t be too shy to give them a like!</string>
+    <string name="sort">Sort</string>
+    <string name="long_click_favorite">Long click an item to perform multiple deletion!</string>
+    <string name="empty_name">Not yet inputted</string>
+    <string name="welcome">Welcome,</string>
+    <string name="options">Options</string>
+    <string name="favorite">Favorite</string>
+    <string name="search">Search User</string>
+    <string name="about">Meow! This app is powered by Github API</string>
+    <string name="no_errors">No errors yet :)</string>
+    <string name="refresh">Refresh</string>
+    <string name="random">Random</string>
+    <string name="details">Details</string>
+    <string name="cancel">Cancel</string>
+    <string name="apply">Apply</string>
+    <string name="welcome_title">Welcome to Github App, Meow!</string>
+    <string name="greeting">Welcome! It seems this is the first time you\'re using our app. Please tell me your name and we wish you a great day!</string>
+    <string name="delete_users">Delete Users</string>
+    <string name="favorite_action_mode_title">%d selected</string>
+    <string name="favorite_number_of_delete">%d items have been deleted!</string>
+    <string name="remove_favorite">User %s has been removed from favorites!</string>
+    <string name="add_favorite">User %s has been added to favorites!</string>
+    <string name="error_code">Error code: %d</string>
+    <string name="current_progress">Current Progress: %d%%</string>
+    <string name="connection_error_message">We think that you haven\'t connected to the internet yet.</string>
+    <string name="not_found_error_message">It looks like we couldn\'t find the person\'s data.</string>
+    <string name="notification_hello_title">Hello! It\'s been a while!</string>
+    <string name="notification_hello_description">Let\'s use our app again, shall we? Click this notification to continue!</string>
+    <string name="home">Home</string>
+    <string name="owner_username">Username</string>
+    <string name="profile">Profile</string>
+    <string name="daily_alert">Daily Alert</string>
+    <string name="enable_daily_alert">Enable Daily Alert</string>
+    <string name="primary_color">Primary Color</string>
+    <string name="others">Others</string>
+    <string name="factory_reset">Factory Reset</string>
+    <string name="language">Language</string>
+    <string name="exit">Exit</string>
+    <string name="primary_color_description">Set main color theme, emphasis colors will be generated as well automatically</string>
+    <string name="daily_alert_on">You will receive alarm notification every day at your specified time</string>
+    <string name="daily_alert_off">You will not receive alarm notification at all</string>
+    <string name="reset_all_data">Are you sure you\'d like to reset all data?</string>
+    <string name="restart">App Restarted!</string>
+    <string name="warning">Warning</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="app_theme">App Theme</string>
+    <string name="click_item_stack_view">Click on an item to see the user\'s detail! When data has been updated, it will refresh the list!</string>
+    <string name="time">Time</string>
+    <string name="tone">Tone</string>
+    <string name="error_messaging">Error code: %1$d with message %2$s. </string>
+    <string name="no_data">No data</string>
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AplikasiKonsumer</string>
+    <string name="latest">Terakhir ditambahkan</string>
+    <string name="your_stats">Status Anda</string>
+    <string name="favorites">Favorit</string>
+    <string name="favorite_detail">Tambahkan pengguna ke daftar favorit anda agar lebih seru!</string>
+    <string name="your_favorites">Favorit Anda</string>
+    <string name="favorite_no_data">Hmmmm… Sepertinya Anda sendirian di sini. Jangan malu untuk memberikan jempol ke orang lain!</string>
+    <string name="sort">Urutan</string>
+    <string name="favorite">Aplikasi konsumen Favorit Pengguna</string>
+    <string name="favorite_seen_times">Anda telah melihat profil %s %d kali sejak ditambahkan ke daftar favorit</string>
+</resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary">
+    <ProgressBar
+        android:id="@+id/progress_circular"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2" />
+    <TextView
+        android:id="@+id/tv_status"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.8"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:padding="5dp"
+        tools:text="Sample Status Text" />
+</LinearLayout>

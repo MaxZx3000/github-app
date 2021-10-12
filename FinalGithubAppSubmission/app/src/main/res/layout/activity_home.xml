@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/root_view"
+    tools:context="com.example.finalgithubappsubmission.activity.HomeActivity">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:id="@+id/frame_profile"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/colorPrimaryDark"
+            android:tag="@string/color_primary_dark_tag"
+            app:layout_constraintTop_toTopOf="parent">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+                <TextView
+                    android:id="@+id/textView"
+                    style="@style/WhiteText.BasicText.Default"
+                    android:drawablePadding="5dp"
+                    android:text="@string/welcome"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_username"
+                    style="@style/WhiteText.LargeText.Default"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/empty_name"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="end|bottom"
+                android:src="@drawable/ic_people"
+                app:tint="@color/colorWhiteTranslucent"
+                android:layout_marginEnd="20dp"
+                android:translationY="15dp"
+                tools:layout_editor_absoluteX="341dp"
+                tools:layout_editor_absoluteY="10dp" />
+        </FrameLayout>
+        <Button
+            android:id="@+id/btn_options"
+            style="@style/HomeButton"
+            android:tag="@string/color_accent_tag"
+            android:layout_margin="5dp"
+            android:drawableTop="@drawable/ic_settings"
+            android:paddingTop="15dp"
+            android:text="@string/options"
+            app:layout_constraintEnd_toStartOf="@+id/btn_search"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/frame_profile" />
+        <Button
+            android:id="@+id/btn_favorite"
+            style="@style/HomeButton"
+            android:drawableTop="@drawable/ic_favorite"
+            android:paddingTop="15dp"
+            android:tag="@string/color_accent_tag"
+            android:text="@string/favorite"
+            app:layout_constraintEnd_toStartOf="@+id/btn_exit"
+            app:layout_constraintHorizontal_bias="0.49"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_options" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_below_buttons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="309dp" />
+
+        <Button
+            android:id="@+id/btn_exit"
+            style="@style/HomeButton"
+            android:drawableTop="@drawable/ic_exit"
+            android:paddingTop="15dp"
+            android:text="@string/exit"
+            android:tag="@string/color_accent_tag"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_favorite"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btn_favorite"
+            app:layout_constraintTop_toTopOf="@+id/btn_favorite"/>
+        <Button
+            android:id="@+id/btn_search"
+            style="@style/HomeButton"
+            android:drawableTop="@drawable/ic_search"
+            android:paddingTop="15dp"
+            android:text="@string/search"
+            android:tag="@string/color_accent_tag"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_options"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btn_options"
+            app:layout_constraintTop_toTopOf="@+id/btn_options" />
+
+        <ImageView
+            android:id="@+id/img_octocat"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline_below_buttons"
+            tools:src="@drawable/octocat" />
+
+        <TextView
+            style="@style/FullWidthContainer"
+            android:gravity="center"
+            android:padding="8dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/about"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_octocat" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

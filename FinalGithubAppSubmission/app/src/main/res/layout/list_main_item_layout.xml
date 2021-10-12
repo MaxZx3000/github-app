@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_profile_container"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:elevation="5dp"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/image_profile_photo"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/tv_username"
+                style="@style/WhiteText.BasicText.Default"
+                android:background="@drawable/gradient_recycle_view"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="2"
+                android:padding="5dp"
+                app:layout_constraintBottom_toTopOf="@+id/txt_type"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:text="Name" />
+            <TextView
+                android:id="@+id/txt_type"
+                style="@style/WhiteText.BasicText.Default"
+                android:gravity="center"
+                android:background="@android:color/black"
+                android:padding="1dp"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/image_profile_photo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:text="Type" />
+            <ImageView
+                android:id="@+id/img_check"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/ic_check"
+                tools:tint="@color/colorAccent"
+                app:tint="@color/colorAccent"
+                tools:visibility="visible"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory
+        android:title="@string/profile"
+        app:iconSpaceReserved="false">
+        <EditTextPreference
+            android:title="@string/owner_username"
+            android:key="@string/key_username"
+            android:summary="Name: "
+            android:icon="@drawable/ic_user"/>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/daily_alert"
+        app:iconSpaceReserved="false">
+        <SwitchPreference
+            app:iconSpaceReserved="false"
+            android:title="@string/enable_daily_alert"
+            android:key="@string/key_enable_daily_alert"
+            android:summaryOn="@string/daily_alert_on"
+            android:summaryOff="@string/daily_alert_off"/>
+        <Preference
+            android:icon="@drawable/ic_time"
+            android:title="@string/time"
+            android:key="@string/key_daily_reminder_time"
+            app:iconSpaceReserved="true"/>
+        <Preference
+            android:icon="@drawable/ic_ringtone"
+            android:title="@string/tone"
+            android:key="@string/key_daily_reminder_tone"/>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/app_theme"
+        app:iconSpaceReserved="false">
+        <Preference
+            android:title="@string/primary_color"
+            android:summary="@string/primary_color_description"
+            android:key="@string/key_color_app_theme"
+            app:iconSpaceReserved="false"/>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/others"
+        app:iconSpaceReserved="false">
+        <Preference
+            android:key="@string/key_factory_reset"
+            android:title="@string/factory_reset"
+            android:icon="@drawable/ic_delete" />
+        <Preference
+            android:key="@string/key_language"
+            android:title="@string/language"
+            android:icon="@drawable/ic_globe"/>
+    </PreferenceCategory>
+</PreferenceScreen>
